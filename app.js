@@ -16,7 +16,7 @@ Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará a
 let amigos = []; 
 
 
-//creamos una función para agregar amigos a la lista
+//creamos una función que permite al usuario ingresar un nombre en el campo de texto y a;adirlo a la lista de amigos creada anteriormente
 function agregarAmigo()
 {
     let nombreAmigo = document.getElementById("amigo"); //instanciamos una variable y le damos el valor del elemento del html que tiene el id amigo
@@ -32,6 +32,12 @@ function agregarAmigo()
     }
 
 }
+
+ //Creamos una función que recorre el array y agregamos cada nombre como un elemento dentro de una lista html
+ //usando innerHTML para limpiar la lista antes de agregar nuevos elementos
+ function mostrarAmigos(){
+    let listaAmigos = document.getElementById("listaAmigos"); //instanciamos una variable y le damos el valor
+ }
 
 //creamos una función para limpiar el campo de texto después de añadir un nombre
 function limpiarCampo()
