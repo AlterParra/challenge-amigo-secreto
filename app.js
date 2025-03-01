@@ -36,14 +36,15 @@ function agregarAmigo()
 
 // función que muestra la lista de amigos ingresados
 function mostrarAmigos(){
+    
     let lista = document.getElementById("listaAmigos"); //instanciamos una variable y le damos el valor del elemento del html que tiene el id listaAmigos
-    lista.innerHTML = ""; //limpiamos el contenido de la lista 
+    lista.innerHTML = "";//limpiamos el contenido de la lista
+
     for (let i = 0; i < amigos.length; i++) {
         let li = document.createElement("li"); 
         li.textContent = amigos[i]; // le asignamos el texto del nombre del amigo
+        lista.appendChild(li); // agregamos el elemento a la lista
     }
-
-    return; //retornamos el valor de la función
 
 }
 
